@@ -8,6 +8,8 @@ function SiteContextProvider({children}){
 
     const [activeLink,setActiveLink] = useState("banner");
 
+    const [showSidebar,setShowSidebar] = useState(false);
+
     function handleScrollTo(id){
 
         if(id === "banner"){
@@ -25,9 +27,12 @@ function SiteContextProvider({children}){
           setActiveLink(id)
       }
 
+      function handleShowSideBar(){
+        setShowSidebar(prevState => !prevState)
+    }
 
     return(
-    <siteContext.Provider value={{activeLink,handleScrollTo,handleSetActiveLink}} >
+    <siteContext.Provider value={{activeLink,handleScrollTo,handleSetActiveLink,showSidebar,handleShowSideBar}} >
         {children}
     </siteContext.Provider>)
 }

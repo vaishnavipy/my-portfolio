@@ -5,6 +5,21 @@
  scroll-behavior: smooth;
   position: relative;
 }
+.app-overlay::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right:0px;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.5);
+  
+  z-index: 5;
+  width: auto;
+  height: auto;
+
+}
+
 /*------------NAVBAR----------------*/
 .navbar{
   width: 100vw;
@@ -25,7 +40,7 @@
   width: 90%;
   max-width: 1200px;
 
-  margin: auto;
+  margin:0 auto;
 
 }
 .navbar-flex{
@@ -90,6 +105,62 @@ transition: width 0.4s;
 .active-link{
   width: 60%;
 }
+.sidebar-icon{
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.sidebar-icon-color{
+  color: #112339;
+}
+.sidebar-icon:hover{
+  color:skyblue;
+}
+
+@media screen and (max-width:980px){
+  .navmenu-flex{
+    display: none;
+  }
+  .sidebar-icon{
+    display: block;
+  }
+}
+.sidebar{
+  top:0px;
+  right: 0px;
+  position: fixed;
+  width: 350px;
+  z-index: 6;
+  height: 100vw;
+background-color: white;
+transform: translateX(1000px);
+transition: transform 1s ;
+padding: 1em;
+
+
+}
+.sidebar .navmenu:hover .hover-link{
+  width: 30%;
+}
+.sidebar .active-link{
+  width: 25%;
+}
+
+
+.show-sidebar{
+  transform: translateX(0px);
+}
+.sidebar-close{
+  text-align: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color:#112339;
+  transition: all 0.5s;
+}
+.sidebar-close:hover{
+  color:skyblue;
+}
 /*------------BANNER----------------*/
 .banner{
   width: 100vw;
@@ -100,6 +171,15 @@ transition: width 0.4s;
   position: fixed;
   scroll-behavior: smooth;
 }
+a{
+  cursor: pointer;
+}
+.icon{
+  color: white;
+}
+.icon:hover{
+  color: skyblue  ;
+}
 .banner-grid{
   display: grid;
  height: 100%;
@@ -108,6 +188,10 @@ grid-template-columns: repeat(2,1fr);
   align-items: center;
  
 
+}
+.banner-content{
+  transform: translateX(-1000px);
+  transition: transform 1s;
 }
 .banner-grid h4{
   font-size: 18px;
@@ -129,6 +213,21 @@ font-weight: 18px;
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   line-height: 22.5px;
+}
+.banner-img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.banner-img img{
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  transform: translateX(1000px);
+  transition: transform 1s;
 }
 /*------------SITE CONTENT----------------*/
 .site-content{
@@ -171,8 +270,9 @@ scroll-behavior: smooth;
    border-radius: 20px;
    position: relative;
    transform: translate3d(0px,120px,0px);
-   transition: transform 1s; 
-   
+  
+   visibility: hidden;
+   transition: all 1s; 
   
  }
  .overlay{
@@ -298,6 +398,63 @@ transition: transform 1s;
   transform: translateX(400px);
 }
 
+/*------------CONTACT ME----------------*/
+.contact-me{
+ background-color: white;
+  width:100vw;
+  display: flex;
+  padding: 3em 0;
+  justify-content: center;
+  align-items: center;
+margin: 0;
+}
+.contact-me-content{
+  text-align: center;
+  width: 80%;
+  max-width: 700px;
+  visibility: hidden;
+  transform: translate3d(0,120px,0);
+  transition: all 1s;
+}
+.thumbnail-flex{
+  display: flex;
+gap:30px;
+justify-content: center;
+}
+.thumbnail-flex img{
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.thumbnail-div{
+  position: relative;
+ 
+  border-radius: 50%;
+}
+.online{
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: yellowgreen;
+  position: absolute;
+  bottom: 25px;
+  right: 5px;
+}
 
 
 
+.footer{
+  width: 100vw;
+  background-color: white;
+margin: 0;
+text-align: center;
+padding: 0.5em 0;
+}
+hr{
+  border: 1px solid #EBEEF3;
+ 
+  margin-top: 0;
+}

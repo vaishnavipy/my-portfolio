@@ -23,6 +23,7 @@ function Projects(){
                     if(elm.style.transform !== "translate3d(0px, 0px, 0px)"){
                         //console.log("1")
                         setTimeout(()=>{
+                            elm.style.visibility ="visible";
                             elm.style.transform = "translate3d(0px,0px,0px)"
 
                         },200*i)
@@ -38,6 +39,7 @@ function Projects(){
                     if(elm.style.transform  != "translate3d(0px, 0px, 0px)"){
                         //console.log("2","ji",elm.style.transform)
                         setTimeout(()=>{
+                            elm.style.visibility ="visible";
                             elm.style.transform = "translate3d(0px,0px,0px)"
                         },200*i)
                     }
