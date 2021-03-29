@@ -1,6 +1,8 @@
 import React,{useContext, useEffect, useState} from "react"
 import { siteContext } from "../siteContext";
 import thumbnail from "../images/thumbnail.jpg"
+import {AiFillGithub} from "react-icons/ai";
+import {SiLinkedin} from "react-icons/si"
 
 
 function ContactMe(){
@@ -13,7 +15,7 @@ function ContactMe(){
 
         setElmTop(document.getElementById("contact").getBoundingClientRect().top);
 
-        if(document.getElementById("contact").getBoundingClientRect().top < 400){
+        if(document.getElementById("contact").getBoundingClientRect().top < 450){
             document.querySelector(".contact-me-content").style.visibility = "visible";
             document.querySelector(".contact-me-content").style.transform ="translate3d(0px,0px,0px)";
         }
@@ -44,6 +46,10 @@ function ContactMe(){
                 <div className="thumbnail-div"><img src={thumbnail} /><div className="online"></div></div>
                 <div style={{textAlign:"left"}}>
                     <h4>Reply time: within 1-2 working days</h4>
+                    <h2>
+                        <a href="https://www.linkedin.com/in/vaishnaviravichandran/" target="_blank"><SiLinkedin className="icon"/></a>
+                        <a href="https://github.com/vaishnavipy?tab=repositories" target="_blank"><AiFillGithub className="icon"/></a>
+                    </h2>
                     <h4>email @ ravichandran.vaishu@gmail.com</h4>
                 </div>
             </div>

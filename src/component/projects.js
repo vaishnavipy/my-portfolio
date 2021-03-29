@@ -8,6 +8,9 @@ import eCommerceReact from "../images/ecommerce.png";
 import ticketBooking from "../images/ticket_booking.png";
 import Stripe from "../images/Stripe.png";
 import screenSizeMap from "../images/screen_size_map.png"
+import triviaGame from "../images/trivia_game.png";
+import memoryGame from "../images/memory_game.png";
+import mathCard from "../images/math_card.png"
 
 
 
@@ -105,6 +108,22 @@ function Projects(){
                     title : "Ecommerce React",
                     url:"https://vaishnavipy.github.io/e-commerce-store/index.html"
                     },
+         {
+          img : triviaGame,
+        title : "Trivia Game",
+          url:"https://vaishnavipy.github.io/trivia-game-react/"
+            },
+            {
+                img : memoryGame,
+              title : "Memory Game React",
+                url:"https://vaishnavipy.github.io/memory-game-react/"
+            },
+            {
+                img : mathCard,
+              title : "Math Card(Drag and Drop)",
+                url:"https://vaishnavipy.github.io/math-card-react/"
+            }
+        
                    
     ]
 

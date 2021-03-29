@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react/cjs/react.development";
 import me from "../images/me.jpeg"
 import {SiLinkedin} from "react-icons/si"
 import { siteContext } from "../siteContext";
+import {AiFillGithub} from "react-icons/ai"
 
 function Banner(){
 
@@ -33,7 +34,10 @@ function Banner(){
                     My liking for clean, simple but beautiful things will be reflected in my websites architecture. Learning new technolgies to make my websites more robust and 
                     and keeping up-to-date ( and some Pinot Noir  ;) ) excite me the most. 
                 </p>
-                <h2><a href="https://www.linkedin.com/in/vaishnaviravichandran/" target="_blank"><SiLinkedin className="icon"/></a></h2>
+                <h2>
+                    <a href="https://www.linkedin.com/in/vaishnaviravichandran/" target="_blank"><SiLinkedin className="icon"/></a>
+                    <a href="https://github.com/vaishnavipy?tab=repositories" target="_blank"><AiFillGithub className="icon"/></a>
+                </h2>
             </div>
             <div className="banner-img">
                 <img src={me} />

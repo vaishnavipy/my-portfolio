@@ -173,6 +173,7 @@ padding: 1em;
 }
 a{
   cursor: pointer;
+  padding:0  0.5em ;
 }
 .icon{
   color: white;
@@ -410,6 +411,12 @@ transition: transform 1s;
   align-items: center;
 margin: 0;
 }
+.contact-me .icon{
+  color: #112339;
+}
+.contact-me .icon:hover{
+  color: skyblue;
+}
 .contact-me-content{
   text-align: center;
   width: 80%;
@@ -422,17 +429,20 @@ margin: 0;
   display: flex;
 gap:30px;
 justify-content: center;
+
 }
 .thumbnail-flex img{
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  align-self: center;
 }
 .thumbnail-div{
   position: relative;
- 
+
+ align-self: center;
   border-radius: 50%;
 }
 .online{
@@ -442,8 +452,8 @@ justify-content: center;
   width: 15px;
   background-color: yellowgreen;
   position: absolute;
-  bottom: 25px;
-  right: 5px;
+  bottom: 15px;
+  right: 0px;
 }
 
 
