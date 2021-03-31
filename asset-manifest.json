@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.1609be33.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.d6216ebd.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.d6216ebd.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.18326797.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.18326797.js.map",
+    "static/js/2.d15fa251.chunk.js": "/my-portfolio/static/js/2.d15fa251.chunk.js",
+    "static/js/2.d15fa251.chunk.js.map": "/my-portfolio/static/js/2.d15fa251.chunk.js.map",
+    "static/js/3.a3936e44.chunk.js": "/my-portfolio/static/js/3.a3936e44.chunk.js",
+    "static/js/3.a3936e44.chunk.js.map": "/my-portfolio/static/js/3.a3936e44.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/css/main.1609be33.chunk.css.map": "/my-portfolio/static/css/main.1609be33.chunk.css.map",
+    "static/js/2.d15fa251.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.d15fa251.chunk.js.LICENSE.txt",
+    "static/media/Stripe.e011f54d.png": "/my-portfolio/static/media/Stripe.e011f54d.png",
+    "static/media/animated_chat.e974490c.png": "/my-portfolio/static/media/animated_chat.e974490c.png",
+    "static/media/beach_resort.1776b53f.png": "/my-portfolio/static/media/beach_resort.1776b53f.png",
+    "static/media/covid_tracker.85ab827a.png": "/my-portfolio/static/media/covid_tracker.85ab827a.png",
+    "static/media/ecommerce.00ecd3eb.png": "/my-portfolio/static/media/ecommerce.00ecd3eb.png",
+    "static/media/github.2b9c4dea.png": "/my-portfolio/static/media/github.2b9c4dea.png",
+    "static/media/graphql.b112dcb3.png": "/my-portfolio/static/media/graphql.b112dcb3.png",
+    "static/media/math_card.f2d09816.png": "/my-portfolio/static/media/math_card.f2d09816.png",
+    "static/media/me.33cc1747.jpeg": "/my-portfolio/static/media/me.33cc1747.jpeg",
+    "static/media/memory_game.6878c082.png": "/my-portfolio/static/media/memory_game.6878c082.png",
+    "static/media/react.73ac128a.png": "/my-portfolio/static/media/react.73ac128a.png",
+    "static/media/screen_size_map.05933dd7.png": "/my-portfolio/static/media/screen_size_map.05933dd7.png",
+    "static/media/ticket_booking.fd0102fa.png": "/my-portfolio/static/media/ticket_booking.fd0102fa.png",
+    "static/media/trivia_game.37dd81cf.png": "/my-portfolio/static/media/trivia_game.37dd81cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18326797.js",
+    "static/js/2.d15fa251.chunk.js",
+    "static/css/main.1609be33.chunk.css",
+    "static/js/main.d6216ebd.chunk.js"
+  ]
+}
